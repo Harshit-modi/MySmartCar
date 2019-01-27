@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  table#table.table.table-hover.table-mc-light-blue
+    thead
+      tr
+        th Vehicle ID
+        th Vehicle Make
+        th Vehicle Model
+        th Vehicle Year
+    tbody
+      tr
+        td #{info.id}
+        td #{info.make}
+        td #{info.model}
+        td #{info.year}
+      tr
+        td
+          button(id="lock_btn") Lock Car
+        td
+          button(id="unlock_btn") Unlock Car
